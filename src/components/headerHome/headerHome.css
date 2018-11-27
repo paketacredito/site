@@ -1,4 +1,88 @@
 .header--home {
-    height: 2000px;
-    background: gray;
+  height: 95vh;
+  background: url("../../images/bg-paketa-home.png");
+  background-size: cover;
+  background-position: bottom left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-repeat: no-repeat;
+  padding: 100px 150px 0;
+}
+
+@media (max-width: 1366px) and (min-height: 1024px) {
+  .header--home {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 1112px) {
+  .header--home {
+    height: 80vh;
+    padding: 50px 100px 0;
+  }
+}
+
+@media (max-width: 1024px) and (min-height: 1365px) {
+  .header--home {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 834px) and (min-height: 1112px) {
+  .header--home {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 768px) and (min-height: 1024px) {
+  .header--home {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .header--home {
+    background-position: -50px;
+    height: 70vh;
+    padding: 50px 25px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .header--home {
+    height: 90vh;
+  }
+}
+
+.header__text {
+  width: 625px;
+}
+
+@media (max-width: 1112px) {
+  .header__text {
+    width: 500px;
+  }
+}
+
+@media (max-width: 834px) and (min-height: 1112px) {
+  .header__text {
+    width: 450px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__text {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) and (min-height: 1024px) {
+  .header__text {
+    width: 400px;
+  }
+}
+
+.header__text p {
+  color: white;
 }

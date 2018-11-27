@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700,800');
 
 html {
   font-family: 'Open Sans';
@@ -248,13 +248,26 @@ h2 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: white;
   font-family: 'Open Sans';
-  font-weight: bold;
+  font-weight: 100;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 42px;
   line-height: 1.1;
 }
+
+@media (max-width: 1112px) {
+  h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 28px;
+  }
+}
+
 h3 {
   margin-left: 0;
   margin-right: 0;
@@ -381,7 +394,8 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 16px;;
+  font-weight: 100;
 }
 figure {
   margin-left: 0;

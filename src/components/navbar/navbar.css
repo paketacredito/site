@@ -2,10 +2,11 @@
   position: fixed;
   z-index: 10;
   top: 0;
+  left: 0;
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 15px 100px;
+  padding: 10px 150px;
   align-items: center;
   background: #0c132e;
 }
@@ -36,13 +37,13 @@
 }
 
 .navbar__logo {
-  width: 150px;
+  width: 125px;
   margin-bottom: 0;
 }
 
 @media (max-width: 375px) {
   .navbar__logo {
-    width: 125px;
+    width: 100px;
   }
 }
 

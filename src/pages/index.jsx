@@ -9,7 +9,9 @@ import JurosBaixos from '../images/icon-paketa-jurosbaixos.svg'
 import ParcelasFixas from '../images/icon-paketa-parcelasfixas.svg'
 import Credito from '../images/icon-paketa-credito.svg'
 import DescontoFolha from '../images/icon-paketa-descotonafolha.svg'
-
+import Planejamento from '../images/icon-paketa-planejamento.svg'
+import Personalizacao from '../images/icon-paketa-personalizacao.svg'
+import Agilidade from '../images/icon-paketa-agilidade.svg'
 
 import '../components/layout.css'
 import './index.css'
@@ -65,6 +67,32 @@ const IndexPage = () => (
 
         <CtaButton to="/contato" text="Saiba Mais" />
 
+      </div>
+    </section>
+
+    <section className="home__dreams">
+      <h3>Facilite o dia a dia e viabilize os sonhos dos seus funcionários</h3>
+      <div className="home__dreams--steps">
+        <Card
+          src={Planejamento}
+          alt="Ícone gráfico de indicadores financeiros"
+          title="Planejamento financeiro"
+          text="Auxílio na definição e atingimento de objetivos e sonhos pessoais"
+        />
+
+        <Card
+          src={Personalizacao}
+          alt="Ícone personalização"
+          title="Personalização"
+          text="Conteúdos e recomendações de acordo com o perfil de cada colaborador"
+        />
+
+        <Card
+          src={Agilidade}
+          alt="Ícone cronometro"
+          title="Agilidade e Simplicidade"
+          text="Simulação e contratação em ambiente digital com crédito em até 24 horas"
+        />
       </div>
     </section>
   </div>

@@ -165,3 +165,63 @@
     flex-direction: column;
   }
 }
+
+.home__contact {
+  padding: 100px 200px;
+  display: flex;
+  justify-content: space-between;
+  background: url('../images/bg-paketa-entraremcontato.svg');
+  background-size: cover;
+  background-position: right;
+  align-items: center;
+}
+
+@media (min-width: 1600px) {
+  .home__contact {
+    padding: 100px 300px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .home__contact {
+    padding: 100px 400px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .home__contact {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home__contact {
+    padding: 50px 25px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.home__contact--text {
+  padding-right: 50px;
+  max-width: 70%;
+}
+
+@media (max-width: 576px) {
+  .home__contact--text {
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+
+.home__contact--text h3, .home__contact--steps p {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .home__contact--text h3 {
+    text-align: center;
+  }
+}

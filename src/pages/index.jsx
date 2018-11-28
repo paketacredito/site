@@ -95,6 +95,19 @@ const IndexPage = () => (
         />
       </div>
     </section>
+
+    <section className="home__contact">
+      <div className="home__contact--text">
+        <h3>Comece agora a realizar os seus objetivos</h3>
+        <p>Fale conosco que podemos ajudá-lo</p>
+      </div>
+
+      <CtaButton
+        to="/contato"
+        text="Entrar em contato"
+      />
+
+    </section>
   </div>
 )
 

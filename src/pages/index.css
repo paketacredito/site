@@ -1,0 +1,52 @@
+.home__credit {
+  padding: 100px 200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1600px) {
+  .home__credit {
+    padding: 100px 250px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .home__credit {
+    padding: 100px 300px;
+  }
+}
+
+@media (max-width: 1366px) and (min-height: 1024px) {
+  .home__credit {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .home__credit {
+    padding: 100px 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home__credit {
+    padding: 50px 25px;
+  }
+}
+
+.home__credit h3 {
+  width: 700px;
+}
+
+.credit__card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+  .credit__card {
+    flex-wrap: wrap;
+  }
+}

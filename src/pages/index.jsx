@@ -4,6 +4,7 @@ import Header from '../components/headerHome/headerHome'
 import Card from '../components/card/card'
 import HowItWorks from '../containers/homeHiw/homeHiw'
 import CtaButton from '../components/ctaButton/ctaButton'
+import Footer from '../components/footer/footer'
 
 import JurosBaixos from '../images/icon-paketa-jurosbaixos.svg'
 import ParcelasFixas from '../images/icon-paketa-parcelasfixas.svg'
@@ -106,8 +107,10 @@ const IndexPage = () => (
         to="/contato"
         text="Entrar em contato"
       />
-
     </section>
+
+    <Footer />
+    
   </div>
 )
 

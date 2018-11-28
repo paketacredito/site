@@ -50,3 +50,80 @@
     flex-wrap: wrap;
   }
 }
+
+.home__cta {
+  padding: 100px 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: url('../images/bg-paketa-vidaleve.png');
+  background-size: cover;
+}
+
+@media (min-width: 1600px) {
+  .home__cta {
+    padding: 200px 400px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .home__cta {
+    padding: 100px 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home__cta {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 834px) and (min-height: 1112px) {
+  .home__cta {
+    background-position: -200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .home__cta {
+    background-position: -200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home__cta {
+    background-position: right;
+    padding: 50px 50px;
+    text-align: center;
+  }
+}
+
+.home__cta h3 {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.home__cta p {
+  color: white;
+  margin-bottom: 28px;
+}
+
+.home__cta--content  {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 800px) {
+  .home__cta--content {
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home__cta--content {
+    align-items: center;
+    width: auto;
+  }
+}

@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/headerHome/headerHome'
 import Card from '../components/card/card'
 import HowItWorks from '../containers/homeHiw/homeHiw'
+import CtaButton from '../components/ctaButton/ctaButton'
 
 import JurosBaixos from '../images/icon-paketa-jurosbaixos.svg'
 import ParcelasFixas from '../images/icon-paketa-parcelasfixas.svg'
@@ -50,7 +51,22 @@ const IndexPage = () => (
 
       </div>
     </section>
+
     <HowItWorks />
+
+    <section className="home__cta">
+      <div className="home__cta--content">
+      
+        <h3>Deixe a vida leve</h3>
+        <p>
+          Crédito com taxas diferenciadas, sem burocracia
+        e até 48 meses para pagar.
+        </p>
+
+        <CtaButton to="/contato" text="Saiba Mais" />
+
+      </div>
+    </section>
   </div>
 )
 

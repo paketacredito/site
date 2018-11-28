@@ -2,6 +2,7 @@ import React from 'react'
 
 import Header from '../components/headerHome/headerHome'
 import Card from '../components/card/card'
+import HowItWorks from '../containers/homeHiw/homeHiw'
 
 import JurosBaixos from '../images/icon-paketa-jurosbaixos.svg'
 import ParcelasFixas from '../images/icon-paketa-parcelasfixas.svg'
@@ -49,6 +50,7 @@ const IndexPage = () => (
 
       </div>
     </section>
+    <HowItWorks />
   </div>
 )
 

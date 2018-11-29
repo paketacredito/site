@@ -57,12 +57,19 @@
   .about-hr__text {
     width: 100%;
     padding-top: 40px;
+    text-align: center;
   }
 }
 
 .about-hr__text h3 {
   text-align: left;
   margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+  .about-hr__text h3 {
+    text-align: center;
+  }
 }
 
 .about__hr img {
@@ -97,5 +104,129 @@
 @media (max-width: 576px) {
   .about__hr img {
     width: 250px;
+  }
+}
+
+.about__employer {
+  background-color: #f8f8f8;
+  padding: 75px 250px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+@media (min-width: 1600px) {
+  .about__employer {
+    padding: 75px 350px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .about__employer {
+    padding:  75px 120px;
+  }
+}
+
+@media (max-width: 834px) and (min-height: 1112px) {
+  .about__employer {
+    padding: 75px 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about__employer {
+    padding: 50px 75px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about__employer {
+    padding: 50px 25px 0;
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.about__employer img {
+  position: absolute;
+  bottom: 0;
+  left: 250px;
+  margin-bottom: 0;
+  height: 400px;
+}
+
+@media (min-width: 1600px) {
+  .about__employer img {
+    left: 450px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .about__employer img {
+    left: 120px;
+  }
+}
+
+@media (max-width: 834px) and (min-height: 1112px) {
+  .about__employer img {
+    left: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about__employer img {
+    left: 75px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about__employer img {
+    position: relative;
+    height: auto;
+    width: 240px;
+    display: block;
+  }
+}
+
+.about-employer__text {
+  width: 500px;
+}
+
+@media (min-width: 1600px) {
+  .about-employer__text {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .about-employer__text {
+    width: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-employer__text {
+    width: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-employer__text {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
+
+.about-employer__text h3 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+@media (max-width: 576px) {
+  .about-employer__text h3 {
+    text-align: center;
   }
 }

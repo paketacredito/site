@@ -5,6 +5,7 @@ import Card from '../components/card/card'
 import HowItWorks from '../containers/homeHiw/homeHiw'
 import CtaButton from '../components/ctaButton/ctaButton'
 import Footer from '../components/footer/footer'
+import CtaSection from '../components/ctaSection/ctaSection'
 
 import JurosBaixos from '../images/icon-paketa-jurosbaixos.svg'
 import ParcelasFixas from '../images/icon-paketa-parcelasfixas.svg'
@@ -97,17 +98,12 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="home__contact">
-      <div className="home__contact--text">
-        <h3>Comece agora a realizar os seus objetivos</h3>
-        <p>Fale conosco que podemos ajudá-lo</p>
-      </div>
-
-      <CtaButton
-        to="/contato"
-        text="Entrar em contato"
-      />
-    </section>
+    <CtaSection
+      title="Comece agora a realizar os seus objetivos"
+      text="Fale conosco que podemos ajudá-lo"
+      cta="Entrar em contato"
+      url="/contato"
+    />
 
     <Footer />
     

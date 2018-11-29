@@ -1,16 +1,22 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import Navbar from '../navbar/navbar'
+
 
 import './header.css'
 
-const Header = () => (
+const Header = (props) => (
   <div className="header">
     <Navbar />
     <p>
-      Crédito consignado feito de uma forma diferente.
-      Praticidade e eficiência para a sua empresa.
+      {props.headline}
     </p>
   </div>
 )
+
+Header.propTypes = {
+  headline: PropTypes.string.isRequired
+}
 
 export default Header

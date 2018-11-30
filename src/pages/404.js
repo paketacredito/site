@@ -1,9 +1,15 @@
 import React from 'react'
+import { Link } from 'gatsby'
+
+import './404.css'
 
 const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  <div className='not-found'>
+    <h1>000PS...</h1>
+    <p>
+      Essa página não existe, que tal voltar para
+      nossa <Link to='/'>página inicial</Link>?
+    </p>
   </div>
     
   )

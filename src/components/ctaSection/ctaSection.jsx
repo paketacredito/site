@@ -18,4 +18,11 @@ const CtaSection = (props) => (
   </section>
 )
 
+CtaSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
+  cta: PropTypes.string.isRequired
+}
+
 export default CtaSection

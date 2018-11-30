@@ -11,6 +11,9 @@ import Order from '../images/paketa-aprovacao-pedido.svg'
 import Credit from '../images/paketa-credito-liberado.svg'
 import Connector from '../images/linha.svg'
 import Check from '../images/check.svg'
+import Campaing from '../images/paketa-campanha.svg'
+import Cloud from '../images/paketa-nuvemsonho.svg'
+import Quiz from '../images/paketa-educacaofinanceira.svg'
 
 import './como-funciona.css'
 
@@ -101,12 +104,76 @@ const HowItWorks = () => (
             <p>Aumente o engajamento da sua equipe.</p>
           </div>
         </div>
-
-
       </div>
     </section>
 
+    <section className="hiw__dreams">
+      <h3>Viabilize os sonhos da sua equipe e mantenha
+        com você a equipe do seus sonhos
+      </h3>
 
+      <div className="hiw-dreams__content">
+
+        <div className="hiw-dreams__card">
+          <div className="hiw-dreams__header">
+            <img src={Campaing} alt="Ícone megafone"/>
+            <p>Campanhas</p>
+          </div>
+
+          <div className="hiw-dreams__text">
+            <p>
+              Campanhas ligadas a temas e conteúdos
+              relevantes para a empresa:
+            </p>
+            <ul>
+              <li>Workshops</li>
+              <li>Artigos</li>
+              <li>Projetos pessoais</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="hiw-dreams__card">
+          <div className="hiw-dreams__header">
+            <img src={Cloud} alt="Ícone nuvem" />
+            <p>Nuvem de Sonhos</p>
+          </div>
+
+          <div className="hiw-dreams__text">
+            <p>
+              Mapeamento dos desejos e necessidades
+              dos funcionários
+            </p>
+            <ul>
+              <li>Viagem e Intercâmbio</li>
+              <li>Eletrônicos e Eletrodomésticos</li>
+              <li>Cursos e Estudos</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="hiw-dreams__card">
+          <div className="hiw-dreams__header">
+            <img src={Quiz} alt="Ícone questionário" />
+            <p>Educação Financeira</p>
+          </div>
+
+          <div className="hiw-dreams__text">
+            <p>
+              Educação financeira e engajamento de
+              funcionários
+            </p>
+            <ul>
+              <li>Vídeos</li>
+              <li>Dicas de crédito</li>
+              <li>Como lidar com dinheiro</li>
+            </ul>
+          </div>
+        </div>
+        
+      
+      </div>
+    </section>
 
     <Footer />
   </div>

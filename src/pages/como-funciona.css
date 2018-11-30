@@ -151,3 +151,143 @@
   padding-left: 15px;
   text-align: left;
 }
+
+.hiw__dreams {
+  padding: 100px 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1600px) {
+  .hiw__dreams {
+    padding: 100px 250px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .hiw__dreams {
+    padding: 100px 350px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .hiw__dreams {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hiw__dreams {
+    padding: 50px 25px;
+  }
+}
+
+.hiw__dreams h3 {
+  width: 700px;
+}
+
+@media (max-width: 838px) {
+  .hiw__dreams h3 {
+    width: 100%;
+  }
+}
+
+.hiw-dreams__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 834px) {
+  .hiw-dreams__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hiw-dreams__card {
+  width: 340px;
+  box-shadow: 0 2px 13px 0 rgba(210, 210, 210, 0.5);
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+@media (max-width: 1112px) {
+  .hiw-dreams__card {
+    width: 280px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .hiw-dreams__card {
+    width: 260px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .hiw-dreams__card {
+    width: 460px;
+    margin-top: 100px;
+  }
+
+  .hiw-dreams__card:first-child {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hiw-dreams__card {
+    width: 100%;
+    margin-top: 80px;
+  }
+}
+
+.hiw-dreams__header {
+  background-color: #15bae6;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  position: relative;
+  padding: 60px 20px 0px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.hiw-dreams__header p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.hiw-dreams__header img {
+  transform: translateY(-120%);
+  position: absolute;
+  margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+  .hiw-dreams__header img {
+    width: 60px;
+    transform: translateY(-150%);
+  }
+}
+
+.hiw-dreams__text {
+  padding: 20px 30px;
+}
+
+.hiw-dreams__text ul {
+  margin-bottom: 0;
+}
+
+.hiw-dreams__text li {
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #4a4a4a;
+}
+
+.hiw-dreams__text li:last-child {
+  margin-bottom: 0;
+}

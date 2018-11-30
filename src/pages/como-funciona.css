@@ -63,3 +63,91 @@
     flex-direction: column;
   }
 }
+
+.hiw__features {
+  padding: 100px 200px;
+  background: url('../images/bg-paketa-entraremcontato.svg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+@media (min-width: 1800px) {
+  .hiw__features {
+    padding: 100px 300px;
+  }
+}
+
+@media (max-width: 1112px) {
+  .hiw__features {
+    padding: 100px;
+  }
+}
+
+@media (max-width: 834px) {
+  .hiw__features {
+    padding: 100px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hiw__features {
+    padding: 100px 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hiw__features {
+    padding: 50px 25px;
+  }
+}
+
+.hiw__features h3 {
+  margin-bottom: 10px;
+}
+
+.hiw-features__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.hiw-features__card {
+  width: 450px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1112px) {
+  .hiw-features__card {
+    width: 400px;
+  }
+}
+
+@media (max-width: 834px) {
+  .hiw-features__card {
+    width: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hiw-features__card {
+    width: 100%;
+  }
+}
+
+.hiw-features__card img {
+  margin-bottom: 0;
+}
+
+@media (max-width: 320px) {
+  .hiw-features__card img {
+    display: none;
+  }
+}
+
+.hiw-features__text {
+  padding-left: 15px;
+  text-align: left;
+}

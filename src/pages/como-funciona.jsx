@@ -10,6 +10,7 @@ import Simulation from '../images/paketa-simulacao-funcionario.svg'
 import Order from '../images/paketa-aprovacao-pedido.svg'
 import Credit from '../images/paketa-credito-liberado.svg'
 import Connector from '../images/linha.svg'
+import Check from '../images/check.svg'
 
 import './como-funciona.css'
 
@@ -19,7 +20,7 @@ const HowItWorks = () => (
         headline="Processo totalmente digital para simulação e disponibilização de Crédito Consignado, com ambiente colaborativo que estimula o engajamento de toda a equipe"
     />
 
-    <div className="hiw__flux">
+    <section className="hiw__flux">
       <h3>Entenda o nosso fluxo de contratação</h3>
 
       <div className="hiw__connector">
@@ -58,8 +59,52 @@ const HowItWorks = () => (
         />
          
       </div>
-    </div>
-      
+    </section>
+    
+    <section className="hiw__features">
+      <h3>Ambiente agradável e processos simplificados</h3>
+      <p>
+        Nossa plataforma facilita o trabalho para o RH.
+        Simulação e liberação de crédito digital.
+      </p>
+
+      <div className="hiw-features__content">
+
+        <div className="hiw-features__card">
+          <img src={Check} alt="check"/>
+          <div className="hiw-features__text">
+            <h4>Processo e acompanhamento online</h4>
+            <p>Facilidade para a sua equipe de RH.</p>
+          </div>
+        </div>
+
+        <div className="hiw-features__card">
+          <img src={Check} alt="check" />
+          <div className="hiw-features__text">
+            <h4>CHAT ONLINE COM A PAKETÁ</h4>
+            <p>Simplicidade sem burocracia.</p>
+          </div>
+        </div>
+
+        <div className="hiw-features__card">
+          <img src={Check} alt="check" />
+          <div className="hiw-features__text">
+            <h4>Conheça os sonhos dos colaboradores</h4>
+            <p>Faça da sua empresa um melhor lugar para trabalhar.</p>
+          </div>
+        </div>
+
+        <div className="hiw-features__card">
+          <img src={Check} alt="check" />
+          <div className="hiw-features__text">
+            <h4>Campanhas, desafios e feedbacks</h4>
+            <p>Aumente o engajamento da sua equipe.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
 
 
 

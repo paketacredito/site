@@ -67,7 +67,7 @@ const IndexPage = () => (
         e até 48 meses para pagar.
         </p>
 
-        <CtaButton to="/contato" text="Saiba Mais" />
+        <CtaButton to="/como-funciona" text="Saiba Mais" />
 
       </div>
     </section>

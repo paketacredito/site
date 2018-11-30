@@ -41,7 +41,7 @@ const Footer = () => (
 
     <div className="footer__address">
       <p>
-        Copyright © 2018 - Paketá Crédito - Av. das
+        Copyright © 2019 - Paketá Crédito - Av. das
         Nações Unidas 12.901, 25º Andar, Torre Norte,
         São Paulo - Brasil
       </p>

@@ -1,5 +1,5 @@
 .about__hr {
-  padding: 50px 250px 150px;
+  padding: 50px 200px 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -229,4 +229,8 @@
   .about-employer__text h3 {
     text-align: center;
   }
+}
+
+.about .cta-section {
+  background: white;
 }

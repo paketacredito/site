@@ -65,7 +65,7 @@
 }
 
 .hiw__features {
-  padding: 100px 200px;
+  padding: 100px 160px;
   background: url('../images/bg-paketa-entraremcontato.svg');
   background-size: cover;
   background-position: center;
@@ -207,7 +207,7 @@
 }
 
 .hiw-dreams__card {
-  width: 340px;
+  width: 310px;
   box-shadow: 0 2px 13px 0 rgba(210, 210, 210, 0.5);
   border-radius: 20px;
   margin-top: 60px;

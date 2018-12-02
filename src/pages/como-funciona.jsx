@@ -48,7 +48,7 @@ const HowItWorks = () => (
       ]}
     />
     <Header
-        headline="Processo totalmente digital para simulação e disponibilização de Crédito Consignado, com ambiente colaborativo que estimula o engajamento de toda a equipe"
+      headline="Processo totalmente digital com um ambiente colaborativo que estimula o engajamento de toda equipe."
     />
 
     <section className="hiw__flux">

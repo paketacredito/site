@@ -80,3 +80,37 @@ footer p {
   margin-bottom: 0;
   margin-top: 20px;
 }
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .footer__social {
+    justify-content: flex-start;
+  }
+}
+
+.footer__social li {
+  list-style: none;
+}
+
+@media (max-width: 576px) {
+  .footer__social li {
+    padding-right: 20px;
+  }
+}
+
+.footer__social a {
+  font-size: 24px;
+}
+
+@media (max-width: 576px) {
+  .footer__social a {
+    font-size: 30px;
+  }
+}

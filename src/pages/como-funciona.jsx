@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
@@ -14,11 +15,38 @@ import Check from '../images/check.svg'
 import Campaing from '../images/paketa-campanha.svg'
 import Cloud from '../images/paketa-nuvemsonho.svg'
 import Quiz from '../images/paketa-educacaofinanceira.svg'
+import Thumbnail from '../images/thumbnail.jpg'
 
 import './como-funciona.css'
 
 const HowItWorks = () => (
   <div className="hiw">
+    <Helmet
+      title="Paketá - Crédito online, simples e descomplicado."
+      meta={[
+        {
+          name: "description",
+          content: "Viabilize o sonhos dos funcionários da sua empresa de maneira eficiente. Torne o RH mais próximo do colaborador e tenha uma equipe ainda mais engajada."
+        },
+        {
+          property: 'og:url',
+          content: 'https://paketa.com.br/como-funciona',
+        },
+        {
+          property: 'og:image',
+          content: Thumbnail,
+        },
+        {
+          property: 'og:image:width',
+          content: '1200',
+        },
+
+        {
+          property: 'og:image:height',
+          content: '628',
+        },
+      ]}
+    />
     <Header
         headline="Processo totalmente digital para simulação e disponibilização de Crédito Consignado, com ambiente colaborativo que estimula o engajamento de toda a equipe"
     />

@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Header from '../components/headerHome/headerHome'
 import Card from '../components/card/card'
@@ -14,12 +15,39 @@ import DescontoFolha from '../images/icon-paketa-descotonafolha.svg'
 import Planejamento from '../images/icon-paketa-planejamento.svg'
 import Personalizacao from '../images/icon-paketa-personalizacao.svg'
 import Agilidade from '../images/icon-paketa-agilidade.svg'
+import Thumbnail from '../images/thumbnail.jpg'
 
 import '../components/layout.css'
 import './index.css'
 
 const IndexPage = () => (
   <div className="home">
+    <Helmet
+      title="Paketá - Crédito online, simples e descomplicado."
+      meta={[
+        {
+          name: "description",
+          content: "Crédito online para funcionários de empresas conveniadas.Desconto direto na folha de pagamento, com taxas de juros mais baixas que outras linhas de crédito.Comece agora. "
+        },
+        {
+          property: 'og:url',
+          content: 'https://paketa.com.br',
+        },
+        {
+          property: 'og:image',
+          content: Thumbnail,
+        },
+        {
+          property: 'og:image:width',
+          content: '1200',
+        },
+
+        {
+          property: 'og:image:height',
+          content: '628',
+        },
+      ]}
+    />
     <Header />
 
     <section id="credit" className="home__credit">

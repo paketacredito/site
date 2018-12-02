@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
@@ -6,11 +7,38 @@ import CtaSection from '../components/ctaSection/ctaSection'
 
 import HrTeam from '../images/img-paketa-rh.svg'
 import Employer from '../images/app-paketa-ajuste-valor.png'
+import Thumbnail from '../images/thumbnail.jpg'
 
 import './quem-somos.css'
 
 const About = () => (
   <div className="about">
+    <Helmet
+      title="Paketá - Crédito online, simples e descomplicado."
+      meta={[
+        {
+          name: "description",
+          content: "Contratação de crédito consignado totalmente digital. Processo simplificado com acordo direto com o RH da sua empresa. Viabilize os sonhos da sua equipe de funcionários."
+        },
+        {
+          property: 'og:url',
+          content: 'https://paketa.com.br/quem-somos',
+        },
+        {
+          property: 'og:image',
+          content: Thumbnail,
+        },
+        {
+          property: 'og:image:width',
+          content: '1200',
+        },
+
+        {
+          property: 'og:image:height',
+          content: '628',
+        },
+      ]}
+    />
     <Header
       headline="Crédito consignado feito de uma forma diferente. Praticidade e eficiência para a sua empresa." 
     />

@@ -29,6 +29,18 @@ const About = () => (
       <img src={HrTeam} alt="Time de RH"/>
     </section>
 
+    <section className="about__employer">
+      <img src={Employer} alt="App Paketá" />
+      <div className="about-employer__text">
+        <h3>Para o Colaborador</h3>
+        <p>
+          Ambiente virtual, descontraído e amigável,
+           com acesso a conteúdos de educação financeira,
+           simulação e contratação de crédito consignado.
+         </p>
+      </div>
+    </section>
+
     <CtaSection
       title="Você tem alguma dúvida?"
       text="Fale conosco que podemos ajudá-lo"

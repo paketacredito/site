@@ -1,6 +1,5 @@
 import React from 'react'
 import Navbar from '../navbar/navbar'
-import CtaButton from '../ctaButton/ctaButton'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import './headerHome.css'

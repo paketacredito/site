@@ -114,3 +114,8 @@ label input[type=radio] {
   padding: 7px 50px;
   cursor: pointer;
 }
+
+.form__button button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}

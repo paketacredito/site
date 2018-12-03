@@ -80,7 +80,7 @@ input, textarea {
 
 form label {
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
   color: #4a4a4a;
   display: flex;
   align-items: center;
@@ -113,9 +113,11 @@ label input[type=radio] {
   border: none;
   padding: 7px 50px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .form__button button:disabled {
   background: gray;
   cursor: not-allowed;
+  transition: 0.5s;
 }

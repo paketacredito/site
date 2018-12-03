@@ -22,7 +22,7 @@ module.exports = {
         background_color: '#15bae6',
         theme_color: '#15bae6',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/paketa-favicon.png', // This path is relative to the root of the site.
       },
     },
     {

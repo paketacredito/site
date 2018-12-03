@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
 
 html {
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -202,7 +202,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -232,7 +232,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-weight: 500;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
@@ -248,8 +248,8 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: white;
-  font-family: 'Open Sans';
-  font-weight: 100;
+  font-family: 'Lato';
+  font-weight: 300;
   text-rendering: optimizeLegibility;
   font-size: 42px;
   line-height: 1.1;
@@ -277,8 +277,8 @@ h3 {
   padding-top: 0;
   margin-bottom: 40px;
   color: #222d5d;
-  font-family: 'Open Sans';
-  font-weight: 100;
+  font-family: 'Lato';
+  font-weight: 300;
   text-rendering: optimizeLegibility;
   font-size: 32px;
   line-height: 1.4;
@@ -301,7 +301,7 @@ h4 {
   padding-right: 0;
   padding-top: 0;
   color: #4a4a4a;
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -319,7 +319,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -335,7 +335,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans';
+  font-family: 'Lato';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -405,7 +405,7 @@ p {
   padding-top: 0;
   margin-bottom: 16px;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 @media (max-width: 320px) {

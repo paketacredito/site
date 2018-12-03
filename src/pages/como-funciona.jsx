@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Fade from 'react-reveal/Fade'
 
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
@@ -53,7 +54,7 @@ const HowItWorks = () => (
 
     <section className="hiw__flux">
       <h3>Entenda o nosso fluxo de contratação</h3>
-
+    
       <div className="hiw__connector">
         <img src={Connector}/>
       </div>
@@ -101,37 +102,46 @@ const HowItWorks = () => (
 
       <div className="hiw-features__content">
 
-        <div className="hiw-features__card">
-          <img src={Check} alt="check"/>
-          <div className="hiw-features__text">
-            <h4>Processo e acompanhamento online</h4>
-            <p>Facilidade para a sua equipe de RH.</p>
+        <Fade left>
+          <div className="hiw-features__card">
+            <img src={Check} alt="check"/>
+            <div className="hiw-features__text">
+              <h4>Processo e acompanhamento online</h4>
+              <p>Facilidade para a sua equipe de RH.</p>
+            </div>
           </div>
-        </div>
+        </Fade>
 
-        <div className="hiw-features__card">
-          <img src={Check} alt="check" />
-          <div className="hiw-features__text">
-            <h4>CHAT ONLINE COM A PAKETÁ</h4>
-            <p>Simplicidade sem burocracia.</p>
+        <Fade left>
+          <div className="hiw-features__card">
+            <img src={Check} alt="check" />
+            <div className="hiw-features__text">
+              <h4>CHAT ONLINE COM A PAKETÁ</h4>
+              <p>Simplicidade sem burocracia.</p>
+            </div>
           </div>
-        </div>
+        </Fade>
 
-        <div className="hiw-features__card">
-          <img src={Check} alt="check" />
-          <div className="hiw-features__text">
-            <h4>Conheça os sonhos dos colaboradores</h4>
-            <p>Faça da sua empresa um melhor lugar para trabalhar.</p>
+        <Fade left>
+          <div className="hiw-features__card">
+            <img src={Check} alt="check" />
+            <div className="hiw-features__text">
+              <h4>Conheça os sonhos dos colaboradores</h4>
+              <p>Faça da sua empresa um melhor lugar para trabalhar.</p>
+            </div>
           </div>
-        </div>
+        </Fade>
 
-        <div className="hiw-features__card">
-          <img src={Check} alt="check" />
-          <div className="hiw-features__text">
-            <h4>Campanhas, desafios e feedbacks</h4>
-            <p>Aumente o engajamento da sua equipe.</p>
+        <Fade left>
+          <div className="hiw-features__card">
+            <img src={Check} alt="check" />
+            <div className="hiw-features__text">
+              <h4>Campanhas, desafios e feedbacks</h4>
+              <p>Aumente o engajamento da sua equipe.</p>
+            </div>
           </div>
-        </div>
+        </Fade>
+
       </div>
     </section>
 
@@ -140,66 +150,71 @@ const HowItWorks = () => (
         com você a equipe do seus sonhos
       </h3>
 
-      <div className="hiw-dreams__content">
-
-        <div className="hiw-dreams__card">
-          <div className="hiw-dreams__header">
-            <img src={Campaing} alt="Ícone megafone"/>
-            <p>Campanhas</p>
-          </div>
-
-          <div className="hiw-dreams__text">
-            <p>
-              Campanhas ligadas a temas e conteúdos
-              relevantes para a empresa:
-            </p>
-            <ul>
-              <li>Workshops</li>
-              <li>Artigos</li>
-              <li>Projetos pessoais</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="hiw-dreams__card">
-          <div className="hiw-dreams__header">
-            <img src={Cloud} alt="Ícone nuvem" />
-            <p>Nuvem de Sonhos</p>
-          </div>
-
-          <div className="hiw-dreams__text">
-            <p>
-              Mapeamento dos desejos e necessidades
-              dos funcionários
-            </p>
-            <ul>
-              <li>Viagem e Intercâmbio</li>
-              <li>Eletrônicos e Eletrodomésticos</li>
-              <li>Cursos e Estudos</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="hiw-dreams__card">
-          <div className="hiw-dreams__header">
-            <img src={Quiz} alt="Ícone questionário" />
-            <p>Educação Financeira</p>
-          </div>
-
-          <div className="hiw-dreams__text">
-            <p>
-              Educação financeira e engajamento de
-              funcionários
-            </p>
-            <ul>
-              <li>Vídeos</li>
-              <li>Dicas de crédito</li>
-              <li>Como lidar com dinheiro</li>
-            </ul>
-          </div>
-        </div>
-        
       
+      <div className="hiw-dreams__content">
+        <Fade clear>
+          <div className="hiw-dreams__card">
+            <div className="hiw-dreams__header">
+              <img src={Campaing} alt="Ícone megafone"/>
+              <p>Campanhas</p>
+            </div>
+
+            <div className="hiw-dreams__text">
+              <p>
+                Campanhas ligadas a temas e conteúdos
+                relevantes para a empresa:
+              </p>
+              <ul>
+                <li>Workshops</li>
+                <li>Artigos</li>
+                <li>Projetos pessoais</li>
+              </ul>
+            </div>
+          </div>
+        </Fade>
+
+        <Fade clear>
+          <div className="hiw-dreams__card">
+            <div className="hiw-dreams__header">
+              <img src={Cloud} alt="Ícone nuvem" />
+              <p>Nuvem de Sonhos</p>
+            </div>
+
+            <div className="hiw-dreams__text">
+              <p>
+                Mapeamento dos desejos e necessidades
+                dos funcionários
+              </p>
+              <ul>
+                <li>Viagem e Intercâmbio</li>
+                <li>Eletrônicos e Eletrodomésticos</li>
+                <li>Cursos e Estudos</li>
+              </ul>
+            </div>
+          </div>
+        </Fade>
+
+        <Fade clear>
+          <div className="hiw-dreams__card">
+            <div className="hiw-dreams__header">
+              <img src={Quiz} alt="Ícone questionário" />
+              <p>Educação Financeira</p>
+            </div>
+
+            <div className="hiw-dreams__text">
+              <p>
+                Educação financeira e engajamento de
+                funcionários
+              </p>
+              <ul>
+                <li>Vídeos</li>
+                <li>Dicas de crédito</li>
+                <li>Como lidar com dinheiro</li>
+              </ul>
+            </div>
+          </div>
+        </Fade>     
+             
       </div>
     </section>
 

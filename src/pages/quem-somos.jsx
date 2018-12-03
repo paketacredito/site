@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Fade from 'react-reveal/Fade'
 
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
@@ -54,11 +55,15 @@ const About = () => (
         </p>
       </div>
 
-      <img src={HrTeam} alt="Time de RH"/>
+      <Fade right>
+        <img src={HrTeam} alt="Time de RH"/>
+      </Fade>
     </section>
 
     <section className="about__employer">
-      <img src={Employer} alt="App Paketá" />
+      <Fade clear>
+        <img src={Employer} alt="App Paketá" />
+      </Fade>
       <div className="about-employer__text">
         <h3>Para o Colaborador</h3>
         <p>

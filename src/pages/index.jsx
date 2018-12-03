@@ -1,5 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Fade from 'react-reveal/Fade'
+
 
 import Header from '../components/headerHome/headerHome'
 import Card from '../components/card/card'
@@ -57,30 +59,37 @@ const IndexPage = () => (
       </h3>
 
       <div className="credit__card">
-        <Card
-          src={JurosBaixos}
-          alt="Juros Baixos"
-          text="Taxas de juros mais baixas que outras linhas de crédito"
-        />
+        <Fade bottom>
+          <Card
+            src={JurosBaixos}
+            alt="Juros Baixos"
+            text="Taxas de juros mais baixas que outras linhas de crédito"
+          />
+        </Fade>
 
-        <Card
-          src={ParcelasFixas}
-          alt="Parcelas Fixas"
-          text="Parcelas fixas de até 30% do salário líquido"
-        />
+        <Fade bottom>
+          <Card
+            src={ParcelasFixas}
+            alt="Parcelas Fixas"
+            text="Parcelas fixas de até 30% do salário líquido"
+          />
+        </Fade>
 
-        <Card
-          src={Credito}
-          alt="Crédito"
-          text="Crédito pode ser usado para qualquer finalidade"
-        />
+        <Fade bottom>
+          <Card
+            src={Credito}
+            alt="Crédito"
+            text="Crédito pode ser usado para qualquer finalidade"
+          />
+        </Fade>
 
-        <Card
-          src={DescontoFolha}
-          alt="Desconto na folha"
-          text="Desconto das parcelas na folha de pagamento"
-        />
-
+        <Fade bottom>
+          <Card
+            src={DescontoFolha}
+            alt="Desconto na folha"
+            text="Desconto das parcelas na folha de pagamento"
+          />
+        </Fade>
       </div>
     </section>
 
@@ -88,41 +97,49 @@ const IndexPage = () => (
 
     <section className="home__cta">
       <div className="home__cta--content">
-      
-        <h3>Deixe a vida leve</h3>
-        <p>
-          Crédito com taxas diferenciadas, sem burocracia
-        e até 48 meses para pagar.
-        </p>
+        <Fade left>
+          <h3>Deixe a vida leve</h3>
+          <p>
+            Crédito com taxas diferenciadas, sem burocracia
+          e até 48 meses para pagar.
+          </p>
 
-        <CtaButton to="/como-funciona" text="Saiba Mais" />
-
+          <CtaButton to="/como-funciona" text="Saiba Mais" />
+        </Fade>
       </div>
     </section>
 
     <section className="home__dreams">
       <h3>Facilite o dia a dia e viabilize os sonhos dos seus funcionários</h3>
       <div className="home__dreams--steps">
-        <Card
-          src={Planejamento}
-          alt="Ícone gráfico de indicadores financeiros"
-          title="Planejamento financeiro"
-          text="Auxílio na definição e atingimento de objetivos e sonhos pessoais"
-        />
 
-        <Card
-          src={Personalizacao}
-          alt="Ícone personalização"
-          title="Personalização"
-          text="Conteúdos e recomendações de acordo com o perfil de cada colaborador"
-        />
+        <Fade bottom>
+          <Card
+            src={Planejamento}
+            alt="Ícone gráfico de indicadores financeiros"
+            title="Planejamento financeiro"
+            text="Auxílio na definição e atingimento de objetivos e sonhos pessoais"
+          />
+        </Fade>
 
-        <Card
-          src={Agilidade}
-          alt="Ícone cronometro"
-          title="Agilidade e Simplicidade"
-          text="Simulação e contratação em ambiente digital com crédito em até 24 horas"
-        />
+        <Fade bottom>
+          <Card
+            src={Personalizacao}
+            alt="Ícone personalização"
+            title="Personalização"
+            text="Conteúdos e recomendações de acordo com o perfil de cada colaborador"
+          />
+        </Fade>
+
+        <Fade bottom>
+          <Card
+            src={Agilidade}
+            alt="Ícone cronometro"
+            title="Agilidade e Simplicidade"
+            text="Simulação e contratação em ambiente digital com crédito em até 24 horas"
+          />
+        </Fade>
+        
       </div>
     </section>
 

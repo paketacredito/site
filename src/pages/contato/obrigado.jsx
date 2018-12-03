@@ -2,6 +2,7 @@ import React from 'react'
 
 import Footer from '../../components/footer/footer'
 import './obrigado.css'
+import '../../components/layout.css'
 
 const Success = () => (
   <div className="success">

@@ -19,6 +19,8 @@ import Quiz from '../images/paketa-educacaofinanceira.svg'
 import Thumbnail from '../images/thumbnail.jpg'
 
 import './como-funciona.css'
+import '../components/layout.css'
+
 
 const HowItWorks = () => (
   <div className="hiw">

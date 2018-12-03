@@ -6,6 +6,9 @@ import Footer from '../components/footer/footer'
 import Form from '../components/form/form'
 import Thumbnail from '../images/thumbnail.jpg'
 
+import '../components/layout.css'
+
+
 const Contact = () => (
   <div className="contact">
     <Helmet

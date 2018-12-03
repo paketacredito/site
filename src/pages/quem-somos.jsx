@@ -11,6 +11,8 @@ import Employer from '../images/app-paketa-ajuste-valor.png'
 import Thumbnail from '../images/thumbnail.jpg'
 
 import './quem-somos.css'
+import '../components/layout.css'
+
 
 const About = () => (
   <div className="about">

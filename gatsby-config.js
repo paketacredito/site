@@ -28,7 +28,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-        endpoint: 'https://top.us19.list-manage.com/subscribe/post?u=2aca0326ad1df0f5361a2d8cf&amp;id=190b287d9c', // see instructions section below
+        endpoint: 'https://paketa.us19.list-manage.com/subscribe/post?u=ef3af52f9f600355192e6cde4&amp;id=22b2a0b0ec', // see instructions section below
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

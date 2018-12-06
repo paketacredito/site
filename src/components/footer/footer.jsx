@@ -38,19 +38,19 @@ const Footer = () => (
           <p className="footer__title">Redes Sociais</p>
           <ul className="footer__social">
             <li>
-              <Link to="https://www.facebook.com/Paketa-Credito-240640256610606">
+              <a target="_blank" href="https://www.facebook.com/Paketa-Credito-240640256610606">
                 <FontAwesomeIcon icon={faFacebook}/>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://www.instagram.com/paketacredito/">
+              <a target="_blank" className="" href="https://www.instagram.com/paketacredito/">
                 <FontAwesomeIcon icon={faInstagram} />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://www.linkedin.com/company/paketa-credito/">
+              <a target="_blank" className="" href="https://www.linkedin.com/company/paketa-credito/">
                 <FontAwesomeIcon icon={faLinkedin} />
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

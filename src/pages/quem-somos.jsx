@@ -48,12 +48,10 @@ const About = () => (
 
     <section className="about__hr">
       <div className="about-hr__text">
-        <h3>Para a sua equipe de RH</h3>
-        <p>Um meio para te ajudar a conhecer melhor os
-          sonhos e necessidades de seus colaboradores e
-          viabilizá-los, tornando a empresa
-          reconhecidamente preocupada com a vida e
-          interesses pessoais de sua equipe.
+        <h3>Para a equipe de RH</h3>
+        <p>Uma ferramenta simples e funcional que facilita o trabalho do RH
+          na gestão do benefício de crédito consignado. Com alguns cliques, o
+          gestor mantém a rotina em dia e assegura foco em suas atividades chaves.
         </p>
       </div>
 

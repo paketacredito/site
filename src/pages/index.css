@@ -129,7 +129,7 @@
 }
 
 .home__dreams {
-  padding: 100px 250px;
+  padding: 100px 150px;
 }
 
 @media (max-width: 1366px) and (min-height: 1023px) {
@@ -140,13 +140,13 @@
 
 @media (max-width: 1112px) {
   .home__dreams {
-    padding: 100px;
+    padding: 100px 50px;
   }
 }
 
 @media (max-width: 1024px) {
   .home__dreams {
-    padding: 100px 50px;
+    padding: 100px 25px;
   }
 }
 

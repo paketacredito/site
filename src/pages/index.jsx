@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Fade from 'react-reveal/Fade'
-
+import ReactGA from 'react-ga'
 
 import Header from '../components/headerHome/headerHome'
 import Card from '../components/card/card'
@@ -21,6 +21,9 @@ import Thumbnail from '../images/thumbnail.jpg'
 
 import '../components/layout.css'
 import './index.css'
+
+ReactGA.initialize('UA-130200057-1')
+ReactGA.pageview('/')
 
 const IndexPage = () => (
   <div className="home">

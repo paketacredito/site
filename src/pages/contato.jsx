@@ -8,6 +8,10 @@ import Thumbnail from '../images/thumbnail.jpg'
 
 import '../components/layout.css'
 
+import ReactGA from 'react-ga'
+
+ReactGA.initialize('UA-130200057-1')
+ReactGA.pageview('/contato')
 
 const Contact = () => (
   <div className="contact">

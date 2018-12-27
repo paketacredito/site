@@ -21,6 +21,10 @@ import Thumbnail from '../images/thumbnail.jpg'
 import './como-funciona.css'
 import '../components/layout.css'
 
+import ReactGA from 'react-ga'
+
+ReactGA.initialize('UA-130200057-1')
+ReactGA.pageview('/como-funciona')
 
 const HowItWorks = () => (
   <div className="hiw">

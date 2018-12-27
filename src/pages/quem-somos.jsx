@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Fade from 'react-reveal/Fade'
+import ReactGA from 'react-ga'
 
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
@@ -12,6 +13,9 @@ import Thumbnail from '../images/thumbnail.jpg'
 
 import './quem-somos.css'
 import '../components/layout.css'
+
+ReactGA.initialize('UA-130200057-1')
+ReactGA.pageview('/quem-somos')
 
 
 const About = () => (

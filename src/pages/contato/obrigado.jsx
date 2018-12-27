@@ -4,6 +4,10 @@ import Footer from '../../components/footer/footer'
 import './obrigado.css'
 import '../../components/layout.css'
 
+import ReactGA from 'react-ga'
+ReactGA.initialize('UA-130200057-1')
+ReactGA.pageview('/contato/obrigado')
+
 const Success = () => (
   <div className="success">
     <div className="success__test">

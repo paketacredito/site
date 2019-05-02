@@ -1,0 +1,58 @@
+.header {
+  background: url('../../images/header-paketa.svg');
+  background-position: bottom left;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 150px 120px;
+}
+
+@media (min-width: 1600px) {
+  .header {
+    height: 600px;
+    padding: 0 150px 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 50px 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    height: 420px;
+    padding: 0 50px 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header {
+    height: 400px;
+    padding: 0 25px 60px;
+  }
+}
+
+.header p {
+  font-size: 32px;
+  color: white;
+  line-height: 1.5;
+  width: 750px;
+}
+
+@media (max-width: 576px) {
+  .header p {
+    font-size: 18px;
+    width: 100%;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header p {
+    font-size: 16px;
+    width: 100%;
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedinIn, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
+import ChatBot from '../chat/chatBot'
 import Logo from '../../images/icon-paketa.svg'
 
 import './footer.css'
@@ -64,6 +64,8 @@ const Footer = () => (
         São Paulo - Brasil
       </p>
     </div>
+    <ChatBot/>
+
   </footer>
 )
 

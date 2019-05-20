@@ -9,6 +9,7 @@ import HowItWorks from '../containers/homeHiw/homeHiw'
 import CtaButton from '../components/ctaButton/ctaButton'
 import Footer from '../components/footer/footer'
 import CtaSection from '../components/ctaSection/ctaSection'
+import ChatBot from '../components/chat/chatBot';
 
 import JurosBaixos from '../images/icon-paketa-jurosbaixos.svg'
 import ParcelasFixas from '../images/icon-paketa-parcelasfixas.svg'
@@ -151,10 +152,13 @@ const IndexPage = () => (
       text="Fale conosco que podemos ajudá-lo"
       cta="Entrar em contato"
       url="/contato"
+      to=""
     />
 
     <Footer />
-    
+
+    <ChatBot/>
+
   </div>
 )
 

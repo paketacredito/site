@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedinIn, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faLinkedinIn, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import ChatBot from '../chat/chatBot'
 import Logo from '../../images/icon-paketa.svg'
 
@@ -31,6 +31,11 @@ const Footer = () => (
                 contato@paketa.com.br
               </Link>
             </li>
+            <li>
+              <a href="https://wa.me/551135001566">
+                (11) 3500-1566
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -50,6 +55,14 @@ const Footer = () => (
             <li>
               <a target="_blank" className="" href="https://www.linkedin.com/company/paketa-credito/">
                 <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </li>
+            
+          </ul>
+          <ul className="footer__social">
+          <li>
+              <a target="_blank" className="" href="https://wa.me/551135001566"  title="Este número também é nosso WhatsApp, entre em contato!">
+                <FontAwesomeIcon icon={faWhatsapp} />
               </a>
             </li>
           </ul>

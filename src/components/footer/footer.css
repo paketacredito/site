@@ -89,6 +89,10 @@ footer p {
   align-items: center;
 }
 
+.footer__social li{
+  padding-left:0.3rem;
+}
+
 @media (max-width: 576px) {
   .footer__social {
     justify-content: flex-start;

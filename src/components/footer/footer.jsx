@@ -57,14 +57,12 @@ const Footer = () => (
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
-            
-          </ul>
-          <ul className="footer__social">
-          <li>
+            <li>
               <a target="_blank" className="" href="https://wa.me/551135001566"  title="Este número também é nosso WhatsApp, entre em contato!">
                 <FontAwesomeIcon icon={faWhatsapp} />
               </a>
             </li>
+            
           </ul>
         </div>
 

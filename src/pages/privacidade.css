@@ -1,0 +1,25 @@
+.privacy{
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+
+.privacy ol {
+  counter-reset: item
+}
+.privacy li {
+  display: block;
+}
+.privacy .listHeader{
+  font-weight: bold;
+}
+.privacy li:before {
+  padding-right: 20px;
+  content: counters(item, ".") " ";
+  counter-increment: item;
+  font-weight: bold;
+}

@@ -20,6 +20,8 @@ const Footer = () => (
           <ul>
             <li><Link to="/quem-somos">Quem Somos</Link></li>
             <li><Link to="/como-funciona">Como Funciona</Link></li>
+            <li><Link to="/privacidade">Política de privacidde</Link></li>
+            
           </ul>
         </div>
 

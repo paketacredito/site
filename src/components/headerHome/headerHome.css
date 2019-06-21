@@ -10,6 +10,12 @@
   padding: 100px 150px 0;
 }
 
+.header__download img {
+  height: 40px;
+  margin-right: 16px;
+}
+
+
 @media (max-width: 1366px) and (min-height: 1024px) {
   .header--home {
     height: 80vh;

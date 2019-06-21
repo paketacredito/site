@@ -10,7 +10,6 @@ import Thumbnail from '../images/thumbnail.jpg'
 
 import './privacidade.css'
 import '../components/layout.css'
-import hastToHyperscript from "hast-to-hyperscript";
 
 ReactGA.initialize('UA-130200057-1')
 ReactGA.pageview('/privacidade')

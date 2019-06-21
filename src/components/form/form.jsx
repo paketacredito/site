@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import addToMailchimp from 'gatsby-plugin-mailchimp'
-// import { Redirect } from 'react-router'
 
 import './form.css'
 
-class Form extends React.Component {
+class Form extends Component {
   constructor() {
     super()
     this.state = {

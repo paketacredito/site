@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import { HamburguerMenu } from 'react-hamburger-button'
 import { HamburgerButton } from 'react-hamburger-button/dist/src/HamburgerButton';
 import Fade from 'react-reveal/Fade'
 import classNames from 'classnames'
@@ -9,7 +8,7 @@ import Logo from '../../images/logo-paketa-credito.png'
 
 import './navbar.css'
 
-class Navbar extends React.Component {
+class Navbar extends Component {
   constructor() {
     super()
     this.state = {

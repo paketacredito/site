@@ -69,7 +69,8 @@ class Form extends Component {
       "reply_to": email,
       "from_name": listFields.NAME,
       "phone": listFields.PHONE,
-      "message": listFields.MESSAGE
+      "message": listFields.MESSAGE,
+      "type":listFields.TYPE,
     }
     const response = await fetch("http://localhost:4000/email/SendContactEmail", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.

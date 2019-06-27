@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-import addToMailchimp from 'gatsby-plugin-mailchimp'
-// import { Redirect } from 'react-router'
 
 import './form.css'
 
-class Form extends React.Component {
+class Form extends Component {
   constructor() {
     super()
     this.state = {
@@ -64,17 +62,30 @@ class Form extends React.Component {
   }
 
 
-  _handleSubmit = (e, email, listFields) => {
+  _handleSubmit = async (e, email, listFields) => {
     e.preventDefault()
-    addToMailchimp(email, listFields)
-      .then(data => {
-        window.location.replace('/contato/obrigado')
-      })
-      .catch(() => {
-        // unnecessary because Mailchimp only ever
-        // returns a 200 status code
-        // see below for how to handle errors
-      })
+
+    const template_params = {
+      "reply_to": email,
+      "from_name": listFields.NAME,
+      "phone": listFields.PHONE,
+      "message": listFields.MESSAGE
+    }
+    const response = await fetch("http://localhost:4000/email/SendContactEmail", {
+      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors", // no-cors, cors, *same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "omit", // include, *same-origin, omit
+      headers: {
+          "Content-Type": "application/json",
+      },
+      redirect: "follow", // manual, *folslow, error
+      referrer: "client", // no-referrer, *client
+      body: JSON.stringify(template_params), // body data type must match "Content-Type" header
+    });
+    await response.json().then(
+      window.location.replace('/contato/obrigado')
+    );
   }
 
   render() {

@@ -75,6 +75,18 @@ footer p {
   font-weight: 300;
 }
 
+.footer__badge {
+  display: flex;
+}
+
+.footer__badge img {
+  height: 32px;
+}
+
+.footer__badge img:first-child {
+  margin-right: 8px;
+}
+
 .footer__address p {
   text-align: right;
   margin-bottom: 0;

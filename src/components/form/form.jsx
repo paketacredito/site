@@ -72,7 +72,7 @@ class Form extends Component {
       "message": listFields.MESSAGE,
       "type":listFields.TYPE,
     }
-    const response = await fetch("http://localhost:4000/email/SendContactEmail", {
+    const response = await fetch("https://portal.paketa.com.br/api/email/SendContactEmail", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, cors, *same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached

@@ -65,9 +65,9 @@ class Navbar extends React.Component {
         {/* <li>
           <Link className="navbar__link" to="/acesso">Login</Link>
         </li> */}
-        <li>
+        {/* <li>
           <Link className="navbar__link navbar__link--cta" to="/contato">Contato</Link>
-        </li>
+        </li> */}
      </ul>
     }
 

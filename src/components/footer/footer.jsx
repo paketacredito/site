@@ -43,9 +43,9 @@ const Footer = () => (
           <p className="footer__title">Ajuda</p>
           <ul>
             <li>
-              <Link to="mailto:contato@paketa.com.br">
+              <a href="mailto:contato@paketa.com.br">
                 contato@paketa.com.br
-              </Link>
+              </a>
             </li>
             <li>
               <a href="https://wa.me/551135001566">

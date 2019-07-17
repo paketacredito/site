@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'react-scroll'
+import {Link as LinkGatsby } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import ChatBot from '../chat/chatBot'
@@ -32,9 +33,16 @@ const Footer = () => (
         <div className="footer__section">
           <p className="footer__title">Sobre</p>
           <ul>
-            <li><Link to="/quem-somos">Quem Somos</Link></li>
-            <li><Link to="/como-funciona">Como Funciona</Link></li>
-            <li><Link to="/privacidade">Política de privacidade</Link></li>
+            <li><Link to="about"
+                spy={true}
+                smooth={true}
+                duration= {500}>Quem Somos
+                </Link></li>
+            <li><Link to="hiw"
+                spy={true}
+                smooth={true}
+                duration= {500}>Como Funciona</Link></li>
+            <li><LinkGatsby to="/privacidade">Política de privacidade</LinkGatsby></li>
             
           </ul>
         </div>

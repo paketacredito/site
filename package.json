@@ -30,6 +30,7 @@
     "react-hamburger-button": "0.0.1",
     "react-helmet": "^5.2.0",
     "react-reveal": "^1.2.2",
+    "react-scroll": "^1.7.12",
     "react-scrolling-color-background": "^1.0.2",
     "react-text-mask": "^5.4.3",
     "scroll-background": "^1.0.5"

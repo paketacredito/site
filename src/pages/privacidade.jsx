@@ -35,7 +35,7 @@ const PrivacyPolicy = (props) => {
       meta={[
         {
           name: "description",
-          content: "ontratação de crédito consignado totalmente digital. Processo simplificado com acordo direto com o RH da sua empresa. Viabilize os sonhos da sua equipe de funcionários."
+          content: "Contratação de crédito consignado totalmente digital. Processo simplificado com acordo direto com o RH da sua empresa. Viabilize os sonhos da sua equipe de funcionários."
         },
         {
           property: 'og:url',

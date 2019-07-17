@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-scroll'
+import { Link as LinkGatsby } from 'gatsby'
 import { HamburguerMenu } from 'react-hamburger-button'
 import { HamburgerButton } from 'react-hamburger-button/dist/src/HamburgerButton';
 import Fade from 'react-reveal/Fade'
@@ -84,9 +85,9 @@ class Navbar extends React.Component {
     return (
       <div className={navbarClass}>
         <div className="navbar__mobile">
-          <Link to="/">
+          <LinkGatsby to="/">
             <img src={Logo} className="navbar__logo" alt="Paketá Crédito" />
-          </Link>
+          </LinkGatsby>
           <div className="navbar__toggle">
             <HamburgerButton
               open={isOpen}

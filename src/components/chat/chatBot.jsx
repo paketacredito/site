@@ -9,7 +9,8 @@ export class ChatBot extends React.Component{
           window.chatRobbu.init('3573CC6178E86034', {
             theme: 'Default',
             delay: 500,
-            open: true
+            open: true,
+            call: 'Simule seu empréstimo'
           });
         }
       }catch(e)

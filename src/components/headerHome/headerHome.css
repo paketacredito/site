@@ -15,7 +15,6 @@
   margin-right: 16px;
 }
 
-
 @media (max-width: 1366px) and (min-height: 1024px) {
   .header--home {
     height: 80vh;

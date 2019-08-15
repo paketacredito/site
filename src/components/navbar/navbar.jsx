@@ -71,12 +71,6 @@ class Navbar extends React.Component {
           smooth={true}
           duration= {500}>Como Funciona</Link>
         </li>
-        {/* <li>
-          <Link className="navbar__link" to="/acesso">Login</Link>
-        </li> */}
-        {/* <li>
-          <Link className="navbar__link navbar__link--cta" to="/contato">Contato</Link>
-        </li> */}
      </ul>
     }
 

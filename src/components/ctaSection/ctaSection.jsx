@@ -13,15 +13,23 @@ const CtaSection = (props) => (
 
     <CtaButton
       to={props.url}
+      click={props.click}
       text={props.cta}
     />
   </section>
 )
 
+const requiredPropsCheck = (props, propName, componentName) => {
+  if (!props.to && !props.click) {
+    return new Error(`One of 'to' or 'click' is required by '${componentName}' component.`)
+  }
+}
+
 CtaSection.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired,
+  to:requiredPropsCheck,
+  click: requiredPropsCheck,
   cta: PropTypes.string.isRequired
 }
 

@@ -1,9 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'react-scroll'
+import {Link as LinkGatsby } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-
+import { faFacebook, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import ChatBot from '../chat/chatBot'
 import Logo from '../../images/icon-paketa.svg'
+import AppStore from '../../images/play-store-branco.svg'
+import GooglePlay from '../../images/google-play-branco.svg'
 
 import './footer.css'
 
@@ -16,10 +19,31 @@ const Footer = () => (
 
       <div className="footer__link">
         <div className="footer__section">
+          <p className="footer__title">Baixe o app</p>
+          <div className="footer__badge">
+            <a href="https://play.google.com/store/apps/details?id=br.com.paketa">
+              <img src={GooglePlay} alt="Google Play" />
+            </a>
+            <a href="https://apps.apple.com/br/app/paketá-crédito/id1466106554">
+              <img src={AppStore} alt="App Store" />
+            </a>
+          </div>
+        </div>
+
+        <div className="footer__section">
           <p className="footer__title">Sobre</p>
           <ul>
-            <li><Link to="/quem-somos">Quem Somos</Link></li>
-            <li><Link to="/como-funciona">Como Funciona</Link></li>
+            <li><Link to="about"
+                spy={true}
+                smooth={true}
+                duration= {500}>Quem Somos
+                </Link></li>
+            <li><Link to="hiw"
+                spy={true}
+                smooth={true}
+                duration= {500}>Como Funciona</Link></li>
+            <li><LinkGatsby to="/privacidade">Política de privacidade</LinkGatsby></li>
+            
           </ul>
         </div>
 
@@ -27,9 +51,14 @@ const Footer = () => (
           <p className="footer__title">Ajuda</p>
           <ul>
             <li>
-              <Link to="mailto:contato@paketa.com.br">
+              <a href="mailto:contato@paketa.com.br">
                 contato@paketa.com.br
-              </Link>
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/551135001566">
+                (11) 3500-1566
+              </a>
             </li>
           </ul>
         </div>
@@ -52,6 +81,12 @@ const Footer = () => (
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </li>
+            <li>
+              <a target="_blank" className="" href="https://wa.me/551135001566"  title="Este número também é nosso WhatsApp, entre em contato!">
+                <FontAwesomeIcon icon={faWhatsapp} />
+              </a>
+            </li>
+            
           </ul>
         </div>
 
@@ -60,11 +95,12 @@ const Footer = () => (
 
     <div className="footer__address">
       <p>
-        Copyright © 2019 - Paketá Crédito - Av. das
-        Nações Unidas 12.901, 25º Andar, Torre Norte,
+        Copyright © 2019 - Rua Pitu, 72 - 12º andar, Cidade Monções,
         São Paulo - Brasil
       </p>
     </div>
+    <ChatBot/>
+
   </footer>
 )
 

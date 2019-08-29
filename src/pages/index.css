@@ -5,12 +5,29 @@
   flex-wrap: wrap;
 }
 
-.navbar__link{
+.navbar__link {
   cursor: pointer;
 }
 
-.footer__section a{
+.footer__section a {
   cursor: pointer;
+}
+
+.home-grafico-info {
+  margin-right: 233px;
+}
+
+.home-grafico-title {
+  width: 350px !important;
+  text-align: start;
+}
+.home-grafico-list {
+  list-style: none;
+  font-weight: 300;
+}
+
+.home-img {
+  width: 400px;
 }
 
 @media (min-width: 1600px) {
@@ -40,6 +57,9 @@
 @media (max-width: 576px) {
   .home__credit {
     padding: 50px 25px;
+  }
+  .home-grafico-info {
+    margin-right: 0px;
   }
 }
 
@@ -116,7 +136,7 @@
   margin-bottom: 28px;
 }
 
-.home__cta--content  {
+.home__cta--content {
   width: 450px;
   display: flex;
   flex-direction: column;
@@ -160,7 +180,7 @@
 
 @media (max-width: 576px) {
   .home__dreams {
-    padding: 50px 25px
+    padding: 50px 25px;
   }
 }
 
@@ -213,7 +233,7 @@
 
 @media (min-width: 1600px) {
   .about-hr__text {
-    width: 500px
+    width: 500px;
   }
 }
 
@@ -255,7 +275,7 @@
 
 @media (min-width: 1600px) {
   .about__hr img {
-    width: 500px
+    width: 500px;
   }
 }
 
@@ -299,7 +319,7 @@
 
 @media (max-width: 1112px) {
   .about__employer {
-    padding:  75px 120px;
+    padding: 75px 120px;
   }
 }
 

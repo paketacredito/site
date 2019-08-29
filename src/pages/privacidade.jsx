@@ -31,11 +31,11 @@ const PrivacyPolicy = (props) => {
   return (
   <div>
     <Helmet
-      title="Paketá - Crédito online, simples e descomplicado."
+      title="Paketá | Políticas de Privacidade"
       meta={[
         {
           name: "description",
-          content: "Contratação de crédito consignado totalmente digital. Processo simplificado com acordo direto com o RH da sua empresa. Viabilize os sonhos da sua equipe de funcionários."
+          content: "Nossa Política de privacidade é um documento que informa ao usuário quem somos, quais dados serão coletados e suas respectivas finalidades."
         },
         {
           property: 'og:url',

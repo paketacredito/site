@@ -21,7 +21,7 @@ import HowItWorks from '../containers/homeHiw/homeHiw'
 import CtaButton from '../components/ctaButton/ctaButton'
 import Footer from '../components/footer/footer'
 import CtaSection from '../components/ctaSection/ctaSection'
-import ChatBot from '../components/chat/chatBot';
+import ChatBot from '../components/chat/chatBot'
 
 import JurosBaixos from '../images/icon-paketa-jurosbaixos.svg'
 import ParcelasFixas from '../images/icon-paketa-parcelasfixas.svg'
@@ -31,24 +31,26 @@ import Planejamento from '../images/icon-paketa-planejamento.svg'
 import Personalizacao from '../images/icon-paketa-personalizacao.svg'
 import Agilidade from '../images/icon-paketa-agilidade.svg'
 import Thumbnail from '../images/thumbnail.jpg'
+import Grafico from '../images/comparativo_juros02.svg'
 
 import '../components/layout.css'
 import './index.css'
-import BasePage from './basePage';
+import BasePage from './basePage'
 
 ReactGA.initialize('UA-130200057-1')
 ReactGA.pageview('/')
-export default class IndexPage extends BasePage{
-  render(){
+export default class IndexPage extends BasePage {
+  render() {
     return (
       <div>
-        <div className="home" name='home'>
+        <div className="home" name="home">
           <Helmet
-            title="Paketá - Crédito online, simples e descomplicado."
+            title="Paketá - Crédito online, simples e rápido | Faça uma simulação"
             meta={[
               {
-                name: "description",
-                content: "Crédito online para funcionários de empresas conveniadas.Desconto direto na folha de pagamento, com taxas de juros mais baixas que outras linhas de crédito.Comece agora."
+                name: 'description',
+                content:
+                  ' Contratação 100% online e descomplicada, juro até 6x menor que o cartão de crédito, dinheiro em até 24h na sua conta. Quite dívidas. Simule agora!',
               },
               {
                 property: 'og:url',
@@ -62,7 +64,7 @@ export default class IndexPage extends BasePage{
                 property: 'og:image:width',
                 content: '1200',
               },
-      
+
               {
                 property: 'og:image:height',
                 content: '628',
@@ -70,13 +72,12 @@ export default class IndexPage extends BasePage{
             ]}
           />
           <Header />
-      
-          <section id="credit" className="home__credit">
+
+          {/* <section id="credit" className="home__credit">
             <h3>
-              Crédito Consignado para funcionários de
-              empresas conveniadas
+              Crédito Consignado para funcionários de empresas conveniadas
             </h3>
-      
+
             <div className="credit__card">
               <Fade bottom>
                 <Card
@@ -85,7 +86,7 @@ export default class IndexPage extends BasePage{
                   text="Taxas de juros mais baixas que outras linhas de crédito"
                 />
               </Fade>
-      
+
               <Fade bottom>
                 <Card
                   src={ParcelasFixas}
@@ -93,7 +94,7 @@ export default class IndexPage extends BasePage{
                   text="Parcelas fixas de até 30% do salário líquido"
                 />
               </Fade>
-      
+
               <Fade bottom>
                 <Card
                   src={Credito}
@@ -101,7 +102,7 @@ export default class IndexPage extends BasePage{
                   text="Crédito pode ser usado para qualquer finalidade"
                 />
               </Fade>
-      
+
               <Fade bottom>
                 <Card
                   src={DescontoFolha}
@@ -110,26 +111,43 @@ export default class IndexPage extends BasePage{
                 />
               </Fade>
             </div>
+          </section> */}
+          <section id="credit" className="home__credit">
+            <div className="home-grafico-info">
+              <h3 className="home-grafico-title">
+                Por que escolher Empréstimo Consignado?
+              </h3>
+              <ul className="home-grafico-list">
+                <li>Taxas de juros mais baixas que outras linhas de crédito</li>
+                <li>Parcelas fixas até 30% do salário liquido</li>
+                <li>Crédito poder ser usado para qualer finalidade</li>
+                <li>Desconto das parcelas na filha de pagamaento</li>
+              </ul>
+            </div>
+            <div>
+              <img className="home-img" src={Grafico} alt="gafico" />
+            </div>
           </section>
-      
+
           <HowItWorks />
-      
+
           <section className="home__cta">
             <div className="home__cta--content">
               <Fade left>
                 <h3>Deixe a vida leve</h3>
                 <p>
-                  Crédito com taxas diferenciadas, sem burocracia
-                e até 48 meses para pagar.
+                  Crédito com taxas diferenciadas, sem burocracia e até 48 meses
+                  para pagar.
                 </p>
               </Fade>
             </div>
           </section>
-      
+
           <section className="home__dreams">
-            <h3>Facilite o dia a dia e viabilize os sonhos dos seus funcionários</h3>
+            <h3>
+              Facilite o dia a dia e viabilize os sonhos dos seus funcionários
+            </h3>
             <div className="home__dreams--steps">
-      
               <Fade bottom>
                 <Card
                   src={Planejamento}
@@ -138,7 +156,7 @@ export default class IndexPage extends BasePage{
                   text="Auxílio na definição e atingimento de objetivos e sonhos pessoais"
                 />
               </Fade>
-      
+
               <Fade bottom>
                 <Card
                   src={Personalizacao}
@@ -147,7 +165,7 @@ export default class IndexPage extends BasePage{
                   text="Conteúdos e recomendações de acordo com o perfil de cada colaborador"
                 />
               </Fade>
-      
+
               <Fade bottom>
                 <Card
                   src={Agilidade}
@@ -156,7 +174,6 @@ export default class IndexPage extends BasePage{
                   text="Simulação e contratação em ambiente digital com crédito em até 24 horas"
                 />
               </Fade>
-              
             </div>
           </section>
         </div>
@@ -164,41 +181,43 @@ export default class IndexPage extends BasePage{
           <section className="about__hr">
             <div className="about-hr__text">
               <h3>Para a equipe de RH</h3>
-              <p>Uma ferramenta simples e funcional que facilita o trabalho do RH
-                na gestão do benefício de crédito consignado. Com alguns cliques, o
-                gestor mantém a rotina em dia e assegura foco em suas atividades chaves.
+              <p>
+                Uma ferramenta simples e funcional que facilita o trabalho do RH
+                na gestão do benefício de crédito consignado. Com alguns
+                cliques, o gestor mantém a rotina em dia e assegura foco em suas
+                atividades chaves.
               </p>
             </div>
-      
+
             <Fade right>
-              <img src={HrTeam} alt="Time de RH"/>
+              <img src={HrTeam} alt="Time de RH" />
             </Fade>
           </section>
-      
-          <section className="about__employer">
+
+          {/* <section className="about__employer">
             <Fade clear>
               <img src={Employer} alt="App Paketá" />
             </Fade>
             <div className="about-employer__text">
               <h3>Para o Colaborador</h3>
               <p>
-                Ambiente virtual, descontraído e amigável,
-                com acesso a conteúdos de educação financeira,
-                simulação e contratação de crédito consignado.
+                Ambiente virtual, descontraído e amigável, com acesso a
+                conteúdos de educação financeira, simulação e contratação de
+                crédito consignado.
               </p>
             </div>
-          </section>
+          </section> */}
         </div>
         <div className="hiw" name="hiw">
           <section className="hiw__flux">
             <h3>Entenda o nosso fluxo de contratação</h3>
-          
+
             <div className="hiw__connector">
-              <img src={Connector}/>
+              <img src={Connector} />
             </div>
 
             <div className="hiw__steps">
-              <Card 
+              <Card
                 src={ContactRh}
                 alt="Ícone de um chat de conversa"
                 text="Contato entre Paketá e RH da Empresa"
@@ -222,27 +241,25 @@ export default class IndexPage extends BasePage{
                 text="Aprovação do pedido pela Paketá e RH"
               />
 
-              <Card 
+              <Card
                 src={Credit}
                 alt="Ícone mão recebendo dinheiro"
                 text="Crédito liberado em até 24H"
               />
-              
             </div>
           </section>
-          
+
           <section className="hiw__features">
             <h3>Ambiente agradável e processos simplificados</h3>
             <p>
-              Nossa plataforma facilita o trabalho para o RH.
-              Simulação e liberação de crédito digital.
+              Nossa plataforma facilita o trabalho para o RH. Simulação e
+              liberação de crédito digital.
             </p>
 
             <div className="hiw-features__content">
-
               <Fade left>
                 <div className="hiw-features__card">
-                  <img src={Check} alt="check"/>
+                  <img src={Check} alt="check" />
                   <div className="hiw-features__text">
                     <h4>Processo e acompanhamento online</h4>
                     <p>Facilidade para a sua equipe de RH.</p>
@@ -279,28 +296,27 @@ export default class IndexPage extends BasePage{
                   </div>
                 </div>
               </Fade>
-
             </div>
           </section>
 
           <section className="hiw__dreams">
-            <h3>Viabilize os sonhos da sua equipe e mantenha
-              com você a equipe do seus sonhos
+            <h3>
+              Viabilize os sonhos da sua equipe e mantenha com você a equipe do
+              seus sonhos
             </h3>
 
-            
             <div className="hiw-dreams__content">
               <Fade clear>
                 <div className="hiw-dreams__card">
                   <div className="hiw-dreams__header">
-                    <img src={Campaing} alt="Ícone megafone"/>
+                    <img src={Campaing} alt="Ícone megafone" />
                     <p>Campanhas</p>
                   </div>
 
                   <div className="hiw-dreams__text">
                     <p>
-                      Campanhas ligadas a temas e conteúdos
-                      relevantes para a empresa:
+                      Campanhas ligadas a temas e conteúdos relevantes para a
+                      empresa:
                     </p>
                     <ul>
                       <li>Workshops</li>
@@ -320,8 +336,7 @@ export default class IndexPage extends BasePage{
 
                   <div className="hiw-dreams__text">
                     <p>
-                      Mapeamento dos desejos e necessidades
-                      dos funcionários
+                      Mapeamento dos desejos e necessidades dos funcionários
                     </p>
                     <ul>
                       <li>Viagem e Intercâmbio</li>
@@ -340,10 +355,7 @@ export default class IndexPage extends BasePage{
                   </div>
 
                   <div className="hiw-dreams__text">
-                    <p>
-                      Educação financeira e engajamento de
-                      funcionários
-                    </p>
+                    <p>Educação financeira e engajamento de funcionários</p>
                     <ul>
                       <li>Vídeos</li>
                       <li>Dicas de crédito</li>
@@ -351,8 +363,7 @@ export default class IndexPage extends BasePage{
                     </ul>
                   </div>
                 </div>
-              </Fade>     
-                  
+              </Fade>
             </div>
           </section>
           <CtaSection
@@ -362,7 +373,7 @@ export default class IndexPage extends BasePage{
             click={this.openContact}
           />
         </div>
-        <ChatBot/>
+        <ChatBot />
         <Footer />
       </div>
     )

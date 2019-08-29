@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="456px" viewBox="0 0 512 456" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>comparativo juros02</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="484" height="428" rx="6"></rect>
+        <filter x="-5.2%" y="-4.0%" width="110.3%" height="111.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="8" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.305882353   0 0 0 0 0.321568627   0 0 0 0 0.403921569  0 0 0 0.18 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-3">
+            <stop stop-color="#13173A" offset="0%"></stop>
+            <stop stop-color="#434AA1" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="79" y="230" width="47" height="123" rx="10"></rect>
+        <filter x="-30.9%" y="-7.7%" width="161.7%" height="123.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.305882353   0 0 0 0 0.321568627   0 0 0 0 0.403921569  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-6">
+            <stop stop-color="#13173A" offset="0%"></stop>
+            <stop stop-color="#434AA1" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="183" y="135" width="47" height="218" rx="10"></rect>
+        <filter x="-30.9%" y="-4.4%" width="161.7%" height="113.3%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.305882353   0 0 0 0 0.321568627   0 0 0 0 0.403921569  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-9">
+            <stop stop-color="#13173A" offset="0%"></stop>
+            <stop stop-color="#434AA1" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-10" x="288" y="275" width="47" height="78" rx="10"></rect>
+        <filter x="-30.9%" y="-12.2%" width="161.7%" height="137.2%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.305882353   0 0 0 0 0.321568627   0 0 0 0 0.403921569  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="-2.48949813e-15%" x2="50%" y2="100%" id="linearGradient-12">
+            <stop stop-color="#15BAE6" offset="0%"></stop>
+            <stop stop-color="#1280BE" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-13" x="387" y="319" width="47" height="34" rx="10"></rect>
+        <filter x="-38.3%" y="-52.9%" width="176.6%" height="205.9%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0823529412   0 0 0 0 0.729411765   0 0 0 0 0.901960784  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0823529412   0 0 0 0 0.729411765   0 0 0 0 0.901960784  0 0 0 0.344460227 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="grafico-comparativo-02" transform="translate(-464.000000, -57.000000)">
+            <g id="comparativo-juros02" transform="translate(478.000000, 63.000000)">
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <text id="Comparativo-de-juros" font-family="MuseoSans-900, Museo Sans" font-size="18" font-weight="bold" fill="#13173A">
+                    <tspan x="90" y="43">COMPARATIVO DE JUROS AO ANO</tspan>
+                </text>
+                <path d="M0,74.5 L484,74.5" id="Line-3" stroke="#EBEBEB" stroke-linecap="square"></path>
+                <text id="500%" font-family="MuseoSans-500, Museo Sans" font-size="15" font-weight="normal" fill="#4E5267">
+                    <tspan x="20" y="109">500%</tspan>
+                </text>
+                <text id="400%" font-family="MuseoSans-500, Museo Sans" font-size="15" font-weight="normal" fill="#4E5267">
+                    <tspan x="20" y="157">400%</tspan>
+                </text>
+                <text id="300%" font-family="MuseoSans-500, Museo Sans" font-size="15" font-weight="normal" fill="#4E5267">
+                    <tspan x="20" y="205">300%</tspan>
+                </text>
+                <text id="270%" font-family="MuseoSans-500, Museo Sans" font-size="15" font-weight="normal" fill="#13173A">
+                    <tspan x="84" y="223">270%</tspan>
+                </text>
+                <text id="425%" font-family="MuseoSans-500, Museo Sans" font-size="15" font-weight="normal" fill="#13173A">
+                    <tspan x="188" y="125">425%</tspan>
+                </text>
+                <text id="40%" font-family="MuseoSans-500, Museo Sans" font-size="15" font-weight="normal" fill="#13173A">
+                    <tspan x="396" y="309">40%</tspan>
+                </text>
+                <text id="107%" font-family="MuseoSans-500, Museo Sans" font-size="15" font-weight="normal" fill="#13173A">
+                    <tspan x="293" y="265">107%</tspan>
+                </text>
+                <text id="200%" font-family="MuseoSans-500, Museo Sans" font-size="15" font-weight="normal" fill="#4E5267">
+                    <tspan x="20" y="253">200%</tspan>
+                </text>
+                <text id="100%" font-family="MuseoSans-500, Museo Sans" font-size="15" font-weight="normal" fill="#4E5267">
+                    <tspan x="20" y="301">100%</tspan>
+                </text>
+                <text id="0%" font-family="MuseoSans-500, Museo Sans" font-size="15" font-weight="normal" fill="#4E5267">
+                    <tspan x="20" y="349">0%</tspan>
+                </text>
+                <text id="Cartão-de-crédito" font-family="MuseoSans-500, Museo Sans" font-size="14" font-weight="normal" fill="#4E5267">
+                    <tspan x="80.555" y="377">Cartão</tspan>
+                    <tspan x="69.467" y="394">de crédito</tspan>
+                </text>
+                <text id="Cheque-especial" font-family="MuseoSans-500, Museo Sans" font-size="14" font-weight="normal" fill="#4E5267">
+                    <tspan x="181.062" y="377">Cheque</tspan>
+                    <tspan x="180.271" y="394">especial</tspan>
+                </text>
+                <text id="Crédito-pessoal" font-family="MuseoSans-500, Museo Sans" font-size="14" font-weight="normal" fill="#4E5267">
+                    <tspan x="287.133" y="377">Crédito</tspan>
+                    <tspan x="287.224" y="394">pessoal</tspan>
+                </text>
+                <text id="Crédito-consignado" font-family="MuseoSans-700, Museo Sans" font-size="16" font-weight="500" fill="#1381BF">
+                    <tspan x="381.656" y="377">Crédito</tspan>
+                    <tspan x="366.088" y="396">consignado</tspan>
+                </text>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                </g>
+                <g id="Rectangle-Copy">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                    <use fill="url(#linearGradient-6)" fill-rule="evenodd" xlink:href="#path-7"></use>
+                </g>
+                <g id="Rectangle-Copy-3">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                    <use fill="url(#linearGradient-9)" fill-rule="evenodd" xlink:href="#path-10"></use>
+                </g>
+                <g id="Rectangle-Copy-2">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                    <use fill="url(#linearGradient-12)" fill-rule="evenodd" xlink:href="#path-13"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

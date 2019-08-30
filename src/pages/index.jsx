@@ -32,6 +32,7 @@ import Personalizacao from '../images/icon-paketa-personalizacao.svg'
 import Agilidade from '../images/icon-paketa-agilidade.svg'
 import Thumbnail from '../images/thumbnail.jpg'
 import Grafico from '../images/comparativo_juros02.svg'
+import Reuniao from '../images/img_paracolaborador-3x.png'
 
 import '../components/layout.css'
 import './index.css'
@@ -118,20 +119,49 @@ export default class IndexPage extends BasePage {
                 Por que escolher Empréstimo Consignado?
               </h3>
               <ul className="home-grafico-list">
-                <li>Taxas de juros mais baixas que outras linhas de crédito</li>
-                <li>Parcelas fixas até 30% do salário liquido</li>
-                <li>Crédito poder ser usado para qualer finalidade</li>
-                <li>Desconto das parcelas na filha de pagamaento</li>
+                <li className="home-grafico-item">
+                  <img
+                    className="home-grafico-check-image"
+                    src={Check}
+                    alt="check"
+                  />
+                  <span>
+                    Taxas de juros mais baixas que outras linhas de crédito
+                  </span>
+                </li>
+                <li className="home-grafico-item">
+                  <img
+                    className="home-grafico-check-image"
+                    src={Check}
+                    alt="check"
+                  />
+                  <span>Parcelas fixas até 30% do salário liquido</span>
+                </li>
+                <li className="home-grafico-item">
+                  <img
+                    className="home-grafico-check-image"
+                    src={Check}
+                    alt="check"
+                  />
+                  <span>Crédito poder ser usado para qualer finalidade</span>
+                </li>
+                <li className="home-grafico-item">
+                  <img
+                    className="home-grafico-check-image"
+                    src={Check}
+                    alt="check"
+                  />
+                  <span>Desconto das parcelas na filha de pagamaento</span>
+                </li>
               </ul>
             </div>
             <div>
               <img className="home-img" src={Grafico} alt="gafico" />
             </div>
           </section>
-
           <HowItWorks />
 
-          <section className="home__cta">
+          {/* <section className="home__cta">
             <div className="home__cta--content">
               <Fade left>
                 <h3>Deixe a vida leve</h3>
@@ -175,7 +205,7 @@ export default class IndexPage extends BasePage {
                 />
               </Fade>
             </div>
-          </section>
+          </section> */}
         </div>
         <div className="about" name="about">
           <section className="about__hr">
@@ -185,13 +215,31 @@ export default class IndexPage extends BasePage {
                 Uma ferramenta simples e funcional que facilita o trabalho do RH
                 na gestão do benefício de crédito consignado. Com alguns
                 cliques, o gestor mantém a rotina em dia e assegura foco em suas
-                atividades chaves.
+                <span className="about-hr__text_bold"> atividades chaves.</span>
               </p>
             </div>
 
             <Fade right>
               <img src={HrTeam} alt="Time de RH" />
             </Fade>
+          </section>
+
+          <section className="home-runiao">
+            <Fade left>
+              <img className="home-reuniao-image" src={Reuniao} alt="reuniao" />
+            </Fade>
+
+            <div>
+              <h3 className="home-reuniao-text">
+                Vamos muito além docrédito pelo crédito...
+              </h3>
+              <p className="home-reuniao-text">
+                Somos um meio de ajudar a conhecer melhor os sonhos e
+                necessidades dos seus colaboradores e viabilizá-los, tornando a
+                empresa reconhecidamente preocupada com a educação financeira e
+                iteresses pessoais de sua equipe.
+              </p>
+            </div>
           </section>
 
           {/* <section className="about__employer">
@@ -207,103 +255,12 @@ export default class IndexPage extends BasePage {
               </p>
             </div>
           </section> */}
-        </div>
-        <div className="hiw" name="hiw">
-          <section className="hiw__flux">
-            <h3>Entenda o nosso fluxo de contratação</h3>
-
-            <div className="hiw__connector">
-              <img src={Connector} />
-            </div>
-
-            <div className="hiw__steps">
-              <Card
-                src={ContactRh}
-                alt="Ícone de um chat de conversa"
-                text="Contato entre Paketá e RH da Empresa"
-              />
-
-              <Card
-                src={Convenio}
-                alt="Ícone pessoa segurando uma bandeira"
-                text="Empresa conveniada e divulgação interna para funcionários"
-              />
-
-              <Card
-                src={Simulation}
-                alt="Ícone do app"
-                text="Simulação digital e Pedido de Crédito pelo funcionário"
-              />
-
-              <Card
-                src={Order}
-                alt="Ícone pedido de crédito"
-                text="Aprovação do pedido pela Paketá e RH"
-              />
-
-              <Card
-                src={Credit}
-                alt="Ícone mão recebendo dinheiro"
-                text="Crédito liberado em até 24H"
-              />
-            </div>
-          </section>
-
-          <section className="hiw__features">
-            <h3>Ambiente agradável e processos simplificados</h3>
-            <p>
-              Nossa plataforma facilita o trabalho para o RH. Simulação e
-              liberação de crédito digital.
-            </p>
-
-            <div className="hiw-features__content">
-              <Fade left>
-                <div className="hiw-features__card">
-                  <img src={Check} alt="check" />
-                  <div className="hiw-features__text">
-                    <h4>Processo e acompanhamento online</h4>
-                    <p>Facilidade para a sua equipe de RH.</p>
-                  </div>
-                </div>
-              </Fade>
-
-              <Fade left>
-                <div className="hiw-features__card">
-                  <img src={Check} alt="check" />
-                  <div className="hiw-features__text">
-                    <h4>CHAT ONLINE COM A PAKETÁ</h4>
-                    <p>Simplicidade sem burocracia.</p>
-                  </div>
-                </div>
-              </Fade>
-
-              <Fade left>
-                <div className="hiw-features__card">
-                  <img src={Check} alt="check" />
-                  <div className="hiw-features__text">
-                    <h4>Conheça os sonhos dos colaboradores</h4>
-                    <p>Faça da sua empresa um melhor lugar para trabalhar.</p>
-                  </div>
-                </div>
-              </Fade>
-
-              <Fade left>
-                <div className="hiw-features__card">
-                  <img src={Check} alt="check" />
-                  <div className="hiw-features__text">
-                    <h4>Campanhas, desafios e feedbacks</h4>
-                    <p>Aumente o engajamento da sua equipe.</p>
-                  </div>
-                </div>
-              </Fade>
-            </div>
-          </section>
 
           <section className="hiw__dreams">
-            <h3>
+            {/* <h3>
               Viabilize os sonhos da sua equipe e mantenha com você a equipe do
               seus sonhos
-            </h3>
+            </h3> */}
 
             <div className="hiw-dreams__content">
               <Fade clear>
@@ -366,6 +323,98 @@ export default class IndexPage extends BasePage {
               </Fade>
             </div>
           </section>
+        </div>
+        <div className="hiw" name="hiw">
+          <section className="hiw__flux">
+            <h3>Entenda o nosso fluxo de contratação</h3>
+
+            <div className="hiw__connector">
+              <img src={Connector} />
+            </div>
+
+            <div className="hiw__steps">
+              <Card
+                src={ContactRh}
+                alt="Ícone de um chat de conversa"
+                text="Contato entre Paketá e RH da Empresa"
+              />
+
+              <Card
+                src={Convenio}
+                alt="Ícone pessoa segurando uma bandeira"
+                text="Empresa conveniada e divulgação interna para funcionários"
+              />
+
+              <Card
+                src={Simulation}
+                alt="Ícone do app"
+                text="Simulação digital e Pedido de Crédito pelo funcionário"
+              />
+
+              <Card
+                src={Order}
+                alt="Ícone pedido de crédito"
+                text="Aprovação do pedido pela Paketá e RH"
+              />
+
+              <Card
+                src={Credit}
+                alt="Ícone mão recebendo dinheiro"
+                text="Crédito liberado em até 24H"
+              />
+            </div>
+          </section>
+
+          {/* <section className="hiw__features">
+            <h3>Ambiente agradável e processos simplificados</h3>
+            <p>
+              Nossa plataforma facilita o trabalho para o RH. Simulação e
+              liberação de crédito digital.
+            </p>
+
+            <div className="hiw-features__content">
+              <Fade left>
+                <div className="hiw-features__card">
+                  <img src={Check} alt="check" />
+                  <div className="hiw-features__text">
+                    <h4>Processo e acompanhamento online</h4>
+                    <p>Facilidade para a sua equipe de RH.</p>
+                  </div>
+                </div>
+              </Fade>
+
+              <Fade left>
+                <div className="hiw-features__card">
+                  <img src={Check} alt="check" />
+                  <div className="hiw-features__text">
+                    <h4>CHAT ONLINE COM A PAKETÁ</h4>
+                    <p>Simplicidade sem burocracia.</p>
+                  </div>
+                </div>
+              </Fade>
+
+              <Fade left>
+                <div className="hiw-features__card">
+                  <img src={Check} alt="check" />
+                  <div className="hiw-features__text">
+                    <h4>Conheça os sonhos dos colaboradores</h4>
+                    <p>Faça da sua empresa um melhor lugar para trabalhar.</p>
+                  </div>
+                </div>
+              </Fade>
+
+              <Fade left>
+                <div className="hiw-features__card">
+                  <img src={Check} alt="check" />
+                  <div className="hiw-features__text">
+                    <h4>Campanhas, desafios e feedbacks</h4>
+                    <p>Aumente o engajamento da sua equipe.</p>
+                  </div>
+                </div>
+              </Fade>
+            </div>
+          </section> */}
+
           <CtaSection
             title="Você tem alguma dúvida?"
             text="Fale conosco que podemos ajudá-lo"

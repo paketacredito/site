@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-scroll'
 import { Link as LinkGatsby } from 'gatsby'
 import { HamburguerMenu } from 'react-hamburger-button'
-import { HamburgerButton } from 'react-hamburger-button/dist/src/HamburgerButton';
+import { HamburgerButton } from 'react-hamburger-button/dist/src/HamburgerButton'
 import Fade from 'react-reveal/Fade'
 import classNames from 'classnames'
 
@@ -15,27 +15,26 @@ class Navbar extends React.Component {
     super()
     this.state = {
       isOpen: true,
-      didScroll: false
+      didScroll: false,
     }
   }
 
   handleClick() {
     if (window.innerWidth < 576) {
       this.setState({
-        isOpen: !this.state.isOpen
+        isOpen: !this.state.isOpen,
       })
     }
-
   }
 
   updateDimensions() {
     if (window.innerWidth < 576) {
       this.setState({
-        isOpen: false
+        isOpen: false,
       })
     } else {
       this.setState({
-        isOpen: true
+        isOpen: true,
       })
     }
   }
@@ -47,7 +46,6 @@ class Navbar extends React.Component {
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateDimensions.bind(this))
-
   }
 
   render() {
@@ -55,32 +53,41 @@ class Navbar extends React.Component {
     let NavbarLinks
 
     if (isOpen) {
-      NavbarLinks =
-      <ul>
-        <li>
-          <Link 
-          className="navbar__link" 
-          to="about"
-          spy={true}
-          smooth={true}
-          duration= {500}>Quem Somos</Link>
-        </li>
-        <li>
-          <Link className="navbar__link" to="hiw"
-          spy={true}
-          smooth={true}
-          duration= {500}>Como Funciona</Link>
-        </li>
-        {/* <li>
+      NavbarLinks = (
+        <ul>
+          <li>
+            <Link
+              className="navbar__link"
+              to="colaborador"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Para o colaborador
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="navbar__link"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Para o RH
+            </Link>
+          </li>
+          {/* <li>
           <Link className="navbar__link" to="/acesso">Login</Link>
         </li> */}
-        {/* <li>
+          {/* <li>
           <Link className="navbar__link navbar__link--cta" to="/contato">Contato</Link>
         </li> */}
-     </ul>
+        </ul>
+      )
     }
 
-    let navbarClass = classNames('navbar', {'navbar__scroll' : didScroll})
+    let navbarClass = classNames('navbar', { navbar__scroll: didScroll })
 
     return (
       <div className={navbarClass}>
@@ -95,14 +102,12 @@ class Navbar extends React.Component {
               width={28}
               height={25}
               strokeWidth={0}
-              color='#fffdf0'
+              color="#fffdf0"
               animationDuration={0.5}
             />
           </div>
         </div>
-        <Fade top>
-          {NavbarLinks}
-        </Fade>
+        <Fade top>{NavbarLinks}</Fade>
       </div>
     )
   }

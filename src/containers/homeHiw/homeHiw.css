@@ -46,6 +46,20 @@
   .home-hiw {
     padding: 100px;
   }
+  .home-colab {
+    flex-direction: column;
+  }
+  .home-colab-image {
+    margin-left: 20px;
+    width: auto;
+  }
+  .home-colab-image {
+    position: static;
+  }
+  .home-colab-image-shadow {
+    width: 0px;
+    height: 0px;
+  }
 }
 
 @media (max-width: 834px) {

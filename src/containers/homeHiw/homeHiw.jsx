@@ -17,7 +17,12 @@ const HomeHowItWorks = () => (
     <div className="home-colab">
       <Fade clear>
         <div className="home-colab-image-shadow"></div>
-        <img className="home-colab-image" src={Colaborador} alt="colaborador" />
+        <img
+          name="colaborador"
+          className="home-colab-image"
+          src={Colaborador}
+          alt="colaborador"
+        />
       </Fade>
       <div className="homecolab-info">
         <h3 className="home-colab-title">Para o Colaborador</h3>
